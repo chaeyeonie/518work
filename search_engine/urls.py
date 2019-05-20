@@ -19,5 +19,6 @@ from search import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.enter, name="enter")
+    path('', views.enter, name="enter"),
+    path('result/', views.result, name="result"),
 ]

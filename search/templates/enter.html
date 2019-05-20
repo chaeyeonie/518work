@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>네이버 뉴스</h1>
-    <form mehotd ='POST'>{% csrf_token %}
-        {{form.as_p}}
+    <form action = "{% url 'result' %}" method='GET'>{% csrf_token %}
+        <input type='input' name='search_term'>
         <button type="submit">확인</button>
     </form>
     
